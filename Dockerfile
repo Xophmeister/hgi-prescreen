@@ -11,6 +11,10 @@ RUN apt update \
                    jq \
                    curl
 
+ADD etc /usr/etc
+RUN cat /usr/etc/passwd >> /etc/passwd \
+ && cat /usr/etc/group  >> /etc/group
+
 ADD data /hgi
 WORKDIR /hgi
 
