@@ -116,7 +116,7 @@ which outputs JSON data with the following properties:
     "group": "bar",
     "inodes": 123,
     "size": 1048576,
-    "latest": "/path/to/most/recently/modified/file"
+    "latest": "/path/to/their/most/recently/modified/file"
   }
   ```
 
