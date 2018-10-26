@@ -122,6 +122,10 @@ which outputs JSON data with the following properties:
 
   This then applies to each object in the `manifest.json` array.
 
+  (In the event that no matches are found for a particular `user` and
+  `group`, `inodes` and `size` should have the value `0` and `latest`
+  should be `null`.)
+
 The form your code takes (e.g., language, paradigm, etc.) and method of
 input and output used is entirely up to you, based on what you feel is
 appropriate for the task. You will be expected to justify your design
