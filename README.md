@@ -120,7 +120,8 @@ which outputs JSON data with the following properties:
   }
   ```
 
-  This then applies to each object in the `manifest.json` array.
+  This then applies to each object in the `manifest.json` array, where
+  order need not be preserved.
 
   (In the event that no matches are found for a particular `user` and
   `group`, `inodes` and `size` should have the value `0` and `latest`
