@@ -91,34 +91,36 @@ which outputs JSON data with the following properties:
 * Where each object contains the following keys and data, derived where
   necessary from `stat.dat.gz`:
 
-  | Key      | Meaning                                                  |
-  | :------- | :------------------------------------------------------- |
-  | `user`   | Unix user name                                           |
-  | `group`  | Unix group name                                          |
-  | `inodes` | The number of inodes owned by the `user` in this `group` |
-  | `size`   | The total size (bytes) of the inodes owned by the `user` in this `group` |
+  | Key      | Meaning                                                                               |
+  | :------- | :------------------------------------------------------------------------------------ |
+  | `user`   | Unix user name                                                                        |
+  | `group`  | Unix group name                                                                       |
+  | `inodes` | The number of inodes owned by the `user` in this `group`                              |
+  | `size`   | The total size (bytes) of the inodes owned by the `user` in this `group`              |
   | `latest` | The file path of the most recently modified inode owned by the `user` in this `group` |
 
-For example, if an object in the `manifest.json` array has the form:
+  For example, if an object in the `manifest.json` array has the form:
 
-```json
-{
-  "user": "foo",
-  "group": "bar"
-}
-```
+  ```json
+  {
+    "user": "foo",
+    "group": "bar"
+  }
+  ```
 
-...the output object may look something like:
+  ...the output object may look something like:
 
-```json
-{
-  "user": "foo",
-  "group": "bar",
-  "inodes": 123,
-  "size": 1048576,
-  "latest": "/path/to/most/recently/modified/file"
-}
-```
+  ```json
+  {
+    "user": "foo",
+    "group": "bar",
+    "inodes": 123,
+    "size": 1048576,
+    "latest": "/path/to/most/recently/modified/file"
+  }
+  ```
+
+  This then applies to each object in the `manifest.json` array.
 
 The form your code takes (e.g., language, paradigm, etc.) and method of
 input and output used is entirely up to you, based on what you feel is
