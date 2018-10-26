@@ -10,7 +10,7 @@ repository with:
 This is based on Ubuntu 18.04 LTS (Bionic Beaver), with the following
 packages immediately available (you may install others, if you wish):
 
-* [`man-db`](https://packages.ubuntu.com/bionic/man-db)
+* [`manpages`](https://packages.ubuntu.com/bionic/manpages)
 * [`vim`](https://packages.ubuntu.com/bionic/vim)
 * [`emacs`](https://packages.ubuntu.com/bionic/emacs)
 * [`build-essential`](https://packages.ubuntu.com/bionic/build-essential)
