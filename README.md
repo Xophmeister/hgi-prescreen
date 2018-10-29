@@ -125,7 +125,8 @@ which outputs JSON data with the following properties:
 
   (In the event that no matches are found for a particular `user` and
   `group`, `inodes` and `size` should have the value `0` and `latest`
-  should be `null`.)
+  should be `null`. If multiple files qualify as `latest` for a
+  particular `user` and `group`, take the first match.)
 
 The form your code takes (e.g., language, paradigm, etc.) and method of
 input and output used is entirely up to you, based on what you feel is
