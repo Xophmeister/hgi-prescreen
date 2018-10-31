@@ -141,4 +141,5 @@ production data in a reasonable amount of time.
 
 *Note* If you install additional tools or require alternative setup from
 the base Docker container, please also provide an appropriate
-`Dockerfile` to run your solution.
+`Dockerfile` to run your solution. Otherwise, please provide minimal
+usage instructions on how to run your solution.
