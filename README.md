@@ -138,3 +138,7 @@ production system, there may be many such files -- for separate file
 systems -- which are orders of magnitude larger in size (hundreds of
 millions of records each). Your solution is expected to work with
 production data in a reasonable amount of time.
+
+*Note* If you install additional tools or require alternative setup from
+the base Docker container, please also provide an appropriate
+`Dockerfile` to run your solution.
